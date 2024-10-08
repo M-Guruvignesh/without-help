@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Dimension Container</title>
+    <style>
+        /* styles.css */
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+} */
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+    font-family: Arial, sans-serif;
+}
+
+.fixed-dimension-container {
+    margin: 0px;
+    width: 175px;
+    height: 415px;
+    background-color:#FAFAFA;
+    border: 1px solid #e9edf1;
+    padding: 120px;
+    align-items: center;
+    justify-content: center;
+
+}
+.header{
+            /* background-color: #e0f7fa; */
+            padding: 10px;
+            border-radius: 10px 10px 0 0;
+            text-align: center;
+        }
+.header img {
+    position: relative;
+    height: 40px;
+    bottom: 115px;   
+ }
+
+.card {
+    background-color: #DEF6FF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0px;
+    /* text-align: center; */
+    width: 378px;
+    height: 204px;
+    position: relative;
+    right: 100px;
+    bottom: 115px;
+    /* align-items: center;
+    justify-content: center; */
+
+}
+.card .title {
+    position: relative;
+    top: 37.8px;
+    left: 86px;
+    font-size: 22.7px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    /* text-align: center;
+    justify-content: center;
+    justify-items: center; */
+}
+.card .amount {
+    font-size: 41.6px;
+    position: relative;
+    top: 45.4px;
+    left: 86px;
+    color: black;
+    font-weight: bold;
+    margin: 10px 0;
+    /* text-align: center; */
+   
+}
+/* .card .amount::before {
+    content: '₹';
+    text-align: center;
+} */
+.card .description {
+    font-size: 15.1px;
+    position: relative;
+    top: 38.3px;
+    left: 90.7px;
+    color: #757575;
+    
+    /* text-align: center; */
+}
+.card .icon {
+    width: 40px;
+    color: #4caf50;
+    position: absolute;
+    top: 43%;
+    left: 65%;
+   
+}
+.br1{
+    position: relative;
+    top: 87px;
+    height: 7.6px;
+    background-color: skyblue;
+}
+.br2{
+    position: relative;
+    top: 87px;
+    height: 7.6px;
+    background-color: blue;
+}
+.receipt-container {
+    width: 300px;
+    height: 235px;
+    position: relative;
+    bottom: 80px;
+    right: 95px;
+    border: 1px solid rgba(231, 212, 212, 0.973);
+    padding: 32px;
+    /* margin: 20px auto; */
+    box-shadow: 0 0 10px rgb(228, 226, 226);
+}
+.section {
+    margin-bottom: 10px;
+    padding: 17px;
+}
+.title {
+    
+    font-weight: bold;
+}
+.icon {
+    float: right;
+    position: relative;
+    bottom: 25px;
+    height: 45px; /* Adjust as needed */
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+    position: relative;
+    top: 151.2px;
+    float: left;
+}
+hr {
+    border: 0;
+    border-top: 1px dashed #ccc;
+    margin: 10px 0;
+}
+.d{
+    font-size: small;
+    
+}
+.d1{
+    position: relative;
+    top: 7px;
+}
+.d2{
+    position: relative;
+    top: 7px;
+}
+.d3{
+    position: relative;
+    top: 7px;
+}
+
+        .footer-content {
+            position: relative;
+            display: flex;
+            align-items: center;
+            right: 100px;
+            bottom: 70px;
+        }
+        .footer-content img {
+            height: 40px;
+            margin-left: 20px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed-dimension-container">
+        <div class="header">
+            <img src="./Paytm_logo.png" alt="Logo">
+            
+        </div>
+        <div class="card">
+            <div class="title">Payment Successful</div>
+            <!-- <div class="icon">✔️</div> -->
+             <img src="./green-tick-transparent.png" alt="" class="icon">
+            <div class="amount">₹1,000</div>
+            <div class="description">Rupees One Thousand Only</div>
+            <div class="br1"></div>
+            <div class="br2"></div>
+        </div>
+        <div class="receipt-container">
+            <div class="section">
+               <div class="title">To:Mr Tinku1</div>
+               <div class="d1 d">UPI linked Bank A/C</div>
+            </div>
+            <hr>
+         
+            <div class="section clearfix">
+               <div class="title">From: Guru Vignesh M</div>
+               <img src="./png-transparent-canara-bank-loan-branch-andhra-bank-bank-angle-triangle-branch-thumbnail.png" alt="Icon" class="icon"/>
+               <div class="d2 d">Canara Bank - 0147</div>
+            </div>
+         
+            <div class="section">
+                UPI Ref. No: 4180092 <b>88167</b>
+                <br/>
+                <div class="d3 d">28 Jun 2024, 09:15 AM</div>
+                
+            </div>
+         </div>
+            <div class="footer-content">
+                
+                <img src="./Capture5_enhanced.PNG" alt="YES BANK Logo">
+            </div>
+    </div>
+</body>
+</html>
